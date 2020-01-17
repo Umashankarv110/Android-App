@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0E7E7"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_Update"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_update_black_24dp"
+                android:onClick="Update_btn"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_Delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:onClick="Delete_btn"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorHeading"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details / Definition"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorHeading"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txtDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeading"
+                android:textSize="19dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Code"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorHeading"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txtCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:background="#000"
+                android:textColor="#ffffff"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorHeading"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txtOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textColor="@color/colorHeading"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
